@@ -5,7 +5,7 @@ with open("input.txt", 'r') as file:
 
     for line in file:
         line = re.split(";|:", line)
-        print(line)
+        #print(line)
 
         red = 0
         blue = 0

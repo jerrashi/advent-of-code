@@ -25,6 +25,7 @@ for key, value in cards_dict.items():
     #print("MATCHING COUNT = ", matching_count)
     if matching_count > 0:
         for i in range(matching_count):
+            # check to make sure we are not extending the array/stack
             if key + i <= len(df):
                 stack_of_cards[key + i] += stack_of_cards[key - 1]
 total_cards = sum(stack_of_cards)
